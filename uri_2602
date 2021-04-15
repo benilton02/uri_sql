@@ -1,4 +1,9 @@
 https://www.urionlinejudge.com.br/judge/pt/problems/view/2602
 
+Solution(1):
 SELECT name FROM customers WHERE state IN ('RS')
+
+
+
+Solution(2):
 SELECT name FROM customers WHERE state = 'RS'
