@@ -1,0 +1,15 @@
+https://www.urionlinejudge.com.br/judge/pt/problems/view/2614
+
+
+Solution(1):
+
+
+SELECT
+    c.name,
+    r.rentals_date
+FROM customers AS c
+
+INNER JOIN rental as r ON
+    c.id = r.id_customers
+
+WHERE extract(month FROM r.rentals_date) = 9
